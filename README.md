@@ -1,100 +1,96 @@
-The goal of this coding exam is to quickly get you off the ground with **Lists and Keys**.
+# Task Manager Implementation
+
+## Overview
+
+This project implements a React application for managing tasks with tagging functionality. The following features have been successfully implemented:
+
+### Features Implemented
+
+1. **Initial State:**
+   - The list of tasks and the task input field are initially empty.
+   - The active option in the `Tags` select element is the first item of the given `tagsList`.
+
+2. **Adding Tasks:**
+   - When non-empty values for tasks and tags are provided, and the **Add Task** button is clicked:
+     - A new task is added to the list.
+     - The task input and tag select elements are reset to their initial values.
+
+3. **Filtering Tasks by Tags:**
+   - Clicking a tag changes it to an active state, and tasks are filtered accordingly.
+   - When no tag is active, all tasks are displayed.
+
+4. **Data Management:**
+   - Used the `uuid` package to generate unique IDs for tasks.
+
+5. **Design Implementation:**
+   - Implemented the design files provided for different screen sizes, ensuring responsiveness and adherence to the provided color palette and font families.
+
+6. **Component Organization:**
+   - Ensured all components are placed in the `src/components` directory without altering the folder names to maintain compatibility with the tests.
 
 ### Refer to the image below:
-
 <br>
 <div style="text-align: center;">
   <video style="max-width:80%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12);outline:none;" loop="true" autoplay="autoplay" controls="controls" muted>
     <source src="https://assets.ccbp.in/frontend/content/react-js/my-tasks-output.mp4" type="video/mp4">
-    
   </video>
 </div>
 <br/>
 
-### Design Files
-
-<details>
-<summary>Click to view</summary>
-
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - No Tasks View](https://assets.ccbp.in/frontend/content/react-js/my-tasks-output-no-tasks-view.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px)](https://assets.ccbp.in/frontend/content/react-js/my-tasks-output.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Filter View](https://assets.ccbp.in/frontend/content/react-js/my-tasks-output-filter-view.png)
-
-</details>
-
 ### Set Up Instructions
 
-<details>
-<summary>Click to view</summary>
+To set up the project, follow these steps:
 
-- Download dependencies by running `npm install`
-- Start up the app using `npm start`
-</details>
+1. Download dependencies by running:
+   ```bash
+   npm install
+   ```
 
-### Completion Instructions
-
-<details>
-<summary>Functionality to be added</summary>
-<br/>
-
-The app must have the following functionalities
-
-- Initially, the list of tasks and `Task` input should be empty and the active option in the `Tags` select element should be the first item of the given tagsList.
-- When non-empty values are provided for Tasks, Tags and the **Add Task** button is clicked,
-  - A new task should be added to the list of tasks.
-  - The value inside the `Task` input and `Tag` select elements should be updated to their initial values.
-- When a single tag is clicked it should be changed to an active state and filtered tasks should be displayed accordingly.
-- When no tag in the list of tags is active, then all the tasks should be displayed.
-- The `App` component consists of the `tagsList`. It consists of a list of tag details objects with the following properties in each object.
-
-  |     key     | DataType |
-  | :---------: | :------: |
-  |  optionId   |  String  |
-  | displayText |  String  |
-
-</details>
+2. Start up the app using:
+   ```bash
+   npm start
+   ```
 
 ### Important Note
 
-<details>
-<summary>Click to view</summary>
+- The following instruction is required for the tests to pass:
+  - Use the `uuid` package to generate the unique id.
 
-<br/>
+### Design Files
 
-**The following instruction is required for the tests to pass**
+The design files used in this implementation can be viewed here:
 
-- Use the `uuid` package to generate the unique id.
+- [No Tasks View](https://assets.ccbp.in/frontend/content/react-js/my-tasks-output-no-tasks-view.png)
+- [Default View](https://assets.ccbp.in/frontend/content/react-js/my-tasks-output.png)
+- [Filter View](https://assets.ccbp.in/frontend/content/react-js/my-tasks-output-filter-view.png)
 
-</details>
+### Colors
 
-<details>
-<summary>Colors</summary>
+The following colors were used in the application:
 
-<br/>
+- ![#131213](https://via.placeholder.com/15/131213/000000?text=+) `#131213`
+- ![#f3aa4e](https://via.placeholder.com/15/f3aa4e/000000?text=+) `#f3aa4e`
+- ![#f1f5f9](https://via.placeholder.com/15/f1f5f9/000000?text=+) `#f1f5f9`
+- ![#64748b](https://via.placeholder.com/15/64748b/000000?text=+) `#64748b`
+- ![#f8f8f8](https://via.placeholder.com/15/f8f8f8/000000?text=+) `#f8f8f8`
+- ![#475569](https://via.placeholder.com/15/475569/000000?text=+) `#475569`
+- ![#323f4b](https://via.placeholder.com/15/323f4b/000000?text=+) `#323f4b`
+- ![#000000](https://via.placeholder.com/15/000000/000000?text=+) `#000000`
+- ![#ffffff](https://via.placeholder.com/15/ffffff/000000?text=+) `#ffffff`
+- ![#1a171d](https://via.placeholder.com/15/1a171d/000000?text=+) `#1a171d`
+- ![#f8fafc](https://via.placeholder.com/15/f8fafc/000000?text=+) `#f8fafc`
 
-<div style="background-color: #131213; width: 150px; padding: 10px; color: white">Hex: #131213</div>
-<div style="background-color: #f3aa4e; width: 150px; padding: 10px; color: black">Hex: #f3aa4e</div>
-<div style="background-color: #f1f5f9; width: 150px; padding: 10px; color: black">Hex: #f1f5f9</div>
-<div style="background-color: #64748b; width: 150px; padding: 10px; color: black">Hex: #64748b</div>
-<div style="background-color: #f8f8f8; width: 150px; padding: 10px; color: black">Hex: #f8f8f8</div>
-<div style="background-color: #475569; width: 150px; padding: 10px; color: black">Hex: #475569</div>
-<div style="background-color: #323f4b; width: 150px; padding: 10px; color: white">Hex: #323f4b</div>
-<div style="background-color: #000000; width: 150px; padding: 10px; color: white">Hex: #000000</div>
-<div style="background-color: #ffffff; width: 150px; padding: 10px; color: black">Hex: #ffffff</div>
-<div style="background-color: #f1f5f9; width: 150px; padding: 10px; color: black">Hex: #f1f5f9</div>
-<div style="background-color: #1a171d; width: 150px; padding: 10px; color: white">Hex: #1a171d</div>
-<div style="background-color: #f8fafc; width: 150px; padding: 10px; color: black">Hex: #f8fafc</div>
+### Font Families
 
-</details>
-
-<details>
-<summary>Font-families</summary>
+The following font family was used in the application:
 
 - Roboto
 
-</details>
+### Next Steps
 
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - Don't change the component folder names as those are the files being imported into the tests.
+- **Testing:** Ensure all functionalities are thoroughly tested.
+- **Optimization:** Further optimize the code for performance and scalability.
+
+## Conclusion
+
+The task manager application with tagging functionality has been successfully implemented as per the provided requirements and design specifications.
