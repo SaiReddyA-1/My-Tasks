@@ -29,13 +29,8 @@ This project implements a React application for managing tasks with tagging func
    - Ensured all components are placed in the `src/components` directory without altering the folder names to maintain compatibility with the tests.
 
 ### Refer to the image below:
+[Click here to open the video in a new tab](https://assets.ccbp.in/frontend/content/react-js/my-tasks-output.mp4)
 <br>
-<div style="text-align: center;">
-  <video style="max-width:80%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12);outline:none;" loop="true" autoplay="autoplay" controls="controls" muted>
-    <source src="https://assets.ccbp.in/frontend/content/react-js/my-tasks-output.mp4" type="video/mp4">
-  </video>
-</div>
-<br/>
 
 ### Set Up Instructions
 
